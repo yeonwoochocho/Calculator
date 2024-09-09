@@ -31,12 +31,21 @@ public class App {
             result = firstNumber - secondNumber;
 
         } else if (operator.equals("/")) {
-            if(secondNumber == 0){
-                System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
-            }
+//            if(secondNumber == 0){
+//                System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+//            }
             result = firstNumber / secondNumber;
         }
         System.out.println("결과: " + result);
+        System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+
+        while(true) {
+            String exit = sc.nextLine();
+
+            if (exit.equals("exit")) {
+                break;
+            }
+        }
 
 
     }
