@@ -1,5 +1,7 @@
 package CalculatorHW;
 
+
+
 import java.util.*;
 
 public class Calculator {
@@ -33,12 +35,8 @@ public class Calculator {
         return answer;
     }
 
-    //저장된 연산 결과들 중 가장 먼저 저장된 데이터를 삭제하는 기능을 가진 메서드
-    public void removeResult() {
-        Queue<Double> resultQueue = new LinkedList<Double>(); //Collection 생성
-        resultQueue.add(result);
-        System.out.print(resultQueue.poll());//result 출력
-        System.out.print("-> 남은 연산 결과가 없습니다.");
-    }
+
+
 
 }
+

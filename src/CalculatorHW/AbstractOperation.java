@@ -1,5 +1,5 @@
 package CalculatorHW;
 
 public abstract class AbstractOperation {
-    public abstract double operate(int firstNumber, int secondNumber);
+    public abstract double operate(double firstNumber, double secondNumber);
 }

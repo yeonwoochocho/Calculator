@@ -1,9 +1,9 @@
 package CalculatorHW;
 
-public class AddOperation extends AbstractOperation {
+public class AddOperation implements Operator {
 
     @Override
-    public double operate (int firstNumber, int secondNumber){
+    public double operate (double firstNumber, double secondNumber){
         return firstNumber + secondNumber;
     }
 }

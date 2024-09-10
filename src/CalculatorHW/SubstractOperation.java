@@ -1,11 +1,11 @@
 package CalculatorHW;
 
-import CalculatorHW.AbstractOperation;
 
-public class SubstractOperation extends AbstractOperation {
+
+public class SubstractOperation implements Operator {
 
     @Override
-    public double operate(int firstNumber, int secondNumber){
+    public double operate(double firstNumber, double secondNumber){
         return firstNumber - secondNumber;
     }
 }
