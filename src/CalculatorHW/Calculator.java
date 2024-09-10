@@ -27,7 +27,7 @@ public class Calculator {
         this.secondNumber = secondNumber;
     }
 
-    public double calculate(int firstNumber, int secondNumber) {
+    public double calculate() {
         double answer = 0;
         answer = operation.operate(this.firstNumber, this.secondNumber);
         return answer;
@@ -35,9 +35,10 @@ public class Calculator {
 
     //저장된 연산 결과들 중 가장 먼저 저장된 데이터를 삭제하는 기능을 가진 메서드
     public void removeResult() {
-        Queue<Double> resultQueue = new LinkedList<Double>();
+        Queue<Double> resultQueue = new LinkedList<Double>(); //Collection 생성
         resultQueue.add(result);
-        System.out.println(resultQueue.poll()); //result 출력
+        System.out.print(resultQueue.poll());//result 출력
+        System.out.print("-> 남은 연산 결과가 없습니다.");
     }
 
 }
