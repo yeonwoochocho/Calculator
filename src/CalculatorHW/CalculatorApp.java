@@ -37,6 +37,14 @@ public class CalculatorApp {
                 CalculatorApp.start();
             }
         }
+        Queue<Double> resultsQueue = new LinkedList<>();
+        resultsQueue.add(parser.executeCalculator());
+        if (!resultsQueue.isEmpty()) {
+            double maxResult = resultsQueue.stream().mapToDouble(v -> v).max().orElse(Double.NaN);
+            System.out.printf("가장 큰 결과값: %.2f%n", maxResult);
+        } else {
+            System.out.println("결과가 없습니다.");
+        }
         System.out.println("계산기가 종료되었습니다.");
 
 
