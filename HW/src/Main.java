@@ -11,29 +11,26 @@ public class Main {
 
         while (running) {
             try {
-                // Input for the first number
+                
                 System.out.print("첫번째 숫자를 입력하세요: ");
                 double firstNumber = scanner.nextDouble();
-
-                // Input for the second number
+                
                 System.out.print("두번째 숫자를 입력하세요: ");
                 double secondNumber = scanner.nextDouble();
 
-                // Input for the operator
                 System.out.print("연산자를 입력하세요 (+, -, *, /): ");
                 char operator = scanner.next().charAt(0);
 
-                // Determine the operator type
                 OperatorType operatorType = OperatorType.fromChar(operator);
 
-                // Create an ArithmeticCalculator object
+                
                 ArithmeticCalculator<Double> calculator = new ArithmeticCalculator<>(firstNumber, secondNumber, operatorType);
 
-                // Perform calculation and display result
+                
                 double result = calculator.calculate();
                 System.out.printf("계산 결과 %.2f %c %.2f = %.2f%n", firstNumber, operator, secondNumber, result);
 
-                // Store the result in the queue
+                
                 resultsQueue.add(result);
 
                 // Ask if user wants to exit
@@ -55,7 +52,6 @@ public class Main {
             }
         }
 
-        // Display the maximum result from the queue
         if (!resultsQueue.isEmpty()) {
             double maxResult = resultsQueue.stream().mapToDouble(v -> v).max().orElse(Double.NaN);
             System.out.printf("가장 큰 결과값: %.2f%n", maxResult);
