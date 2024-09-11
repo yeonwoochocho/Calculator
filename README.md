@@ -13,14 +13,14 @@
 
 ## 주요기능
 - Lv 1. 클래스 없이 기본적인 연산을 수행할 수 있는 계산기 만들기
-  App.java 파일에서 연산을 수행하는 계산기 구현 
+  - App.java 파일에서 연산을 수행하는 계산기 구현 
   
 - Lv 2. 클래스를 적용해 기본적인 연산을 수행할 수 있는 계산기 만들기
-  AbstractionOperation 에서 추상 메소드 구현 후
-  AddOperation, SubstractOperation, MultiplyOperation, DivideOperation 을 별도로 만들어 
-  Calculator에서 연산 수행
+    - AbstractionOperation 에서 추상 메소드 구현 후
+    - AddOperation, SubstractOperation, MultiplyOperation, DivideOperation 을 별도로 만들어 
+    - Calculator에서 연산 수행
 
 - Lv 3. Enum, 제네릭, 람다 & 스트림을 이해한 계산기 만들기
-  기존 프로젝트에서 디버깅에 실패해서 따로 HW 패키지에서 Lv 3 구현
-  ArithmetricCalculator 연산 수행
-  OperatorType enum 타입을 활용
+    - 기존 프로젝트에서 디버깅에 실패해서 따로 HW 패키지에서 Lv 3 구현
+    - ArithmetricCalculator 연산 수행
+    - OperatorType enum 타입을 활용
