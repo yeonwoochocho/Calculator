@@ -33,7 +33,7 @@ public class Main {
                 
                 resultsQueue.add(result);
 
-                // Ask if user wants to exit
+                
                 System.out.print("연산을 종료하시겠습니까? (exit 입력 시 종료) ");
                 scanner.nextLine(); // Consume newline
                 String exitCommand = scanner.nextLine();
